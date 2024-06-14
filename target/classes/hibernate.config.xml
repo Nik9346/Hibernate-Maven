@@ -2,12 +2,13 @@
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
 <hibernate-configuration>
 	<session-factory>
     	<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3310/sql_02</property> <!-- url del database -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:8889/sql_02</property> <!-- url del database -->
         <property name="hibernate.connection.username">root</property> <!-- username per database -->
-        <property name="hibernate.connection.password"></property> <!-- password per database -->
+        <property name="hibernate.connection.password">root</property> <!-- password per database -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">none</property>
